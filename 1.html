@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ десертів</title>
+    <!-- Підключення шрифту Lora -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+
+    <!-- Бургер-меню -->
+    <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Горизонтальне меню -->
+    <nav class="menu-hero">
+        <ul>
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Торти</a></li>
+            <li><a href="#">Капкейки</a></li>
+            <li><a href="#">Тарти</a></li>
+            <li><a href="#">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <h1>Світ десертів</h1>
+</header>
+
+<section class="blocks">
+
+    <div class="block">
+        <img src="image/Торт.jpg" alt="Торти">
+        <h2>Торти</h2>
+        <p>Рецепти ніжних тортів з різними кремами та начинками для домашнього приготування.</p>
+    </div>
+
+    <div class="block">
+        <img src="image/Капкейки.jpg" alt="Капкейки">
+        <h2>Капкейки</h2>
+        <p>Легкі, ароматні тістечка — швидкі та смачні рецепти.</p>
+    </div>
+
+    <div class="block">
+        <img src="image/Тарти1.jpg" alt="Тарти">
+        <h2>Тарти</h2>
+        <p>Смачні тартові десерти з фруктами та кремом.</p>
+    </div>
+
+</section>
+
+<script>
+function toggleMenu() {
+    document.querySelector(".menu-hero ul").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
